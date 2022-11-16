@@ -1,15 +1,25 @@
-PiwikVisitsSummary
-==================
+# MatomoVisitsSummary
 
-A MODX Dashboard Widget with the Visits Summary Graph from Piwik.
-Package also includes a chunk with the piwik tracking code.
+This extra brings the Matomo VisitsSummary Graph to your MODX Dashboard. The
+package also includes a chunk with the matomo tracking code.
 
+## Installation
 
-Instructions
-------------------
+MODX Package Management
 
-- Install the extra via the MODX package management in your MODX manager
-- go to your system settings, select the piwikvisitssummary namespace and enter your piwik url, siteid and token_auth. To display a full statistic link, you have to enter the piwik user and the MD5 coded password of that user too.
-- edit your dashboard configuration and add the PiwikVisitsSummary widget to your dashboard
+## Usage
 
-To include the piwik tracking code to your site, you can use the ```[[$piwik.trackingcode]]``` chunk. It uses the url and siteid from your PiwikVisitsSummary settings.
+Install via package manager. Populate the MODX system settings in the namespace
+`matomovisitssummary` and install the dashboard widgets.
+
+To include the Matomo tracking code in your page, you can use the chunk
+`matomo.trackingcode`. It uses the URL and siteid from the system settings in
+the namespace `matomovisitssummary`.
+
+## Documentation
+
+For more information please read the [documentation](https://jako.github.io/MatomoVisitsSummary/).
+
+## License
+
+The project is licensed under the [GPLv2 license](https://github.com/Jako/MatomoVisitsSummary/blob/master/core/components/matomovisitssummary/docs/license.md).

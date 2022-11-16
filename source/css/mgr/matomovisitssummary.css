@@ -1,0 +1,52 @@
+.dashboard-block-treehillstudio {
+  position: relative;
+}
+
+#dashboard-block-treehillstudio-matomovisitssummary iframe {
+  border: none;
+  width: 100%;
+  height: 255px;
+}
+#dashboard-block-treehillstudio-matomovisitssummary .widget-iframe {
+  margin: -10px;
+  height: 260px;
+}
+#dashboard-block-treehillstudio-matomovisitssummary .matomo-directlink {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  padding: 14px 0 12px;
+  text-decoration: none;
+  color: #5e5e5e;
+}
+#dashboard-block-treehillstudio-matomovisitssummary .treehillstudio-widget-about {
+  position: absolute;
+  cursor: pointer;
+  right: 50%;
+  transform: translateX(50%);
+  top: 12px;
+  opacity: 0.25;
+  transition: opacity 0.5s;
+}
+#dashboard-block-treehillstudio-matomovisitssummary .treehillstudio-widget-about:hover {
+  opacity: 1;
+}
+
+.treehillstudio_window a {
+  color: #b2bf28;
+  text-decoration: none;
+}
+.treehillstudio_window a:hover {
+  color: #77801a;
+}
+
+#dashboard-block-treehillstudio-matomovisitssummary.modx3 .action-buttons {
+  margin-right: 105px;
+}
+#dashboard-block-treehillstudio-matomovisitssummary.modx3 .body {
+  overflow: visible;
+}
+#dashboard-block-treehillstudio-matomovisitssummary.modx3 .matomo-directlink {
+  top: -46px;
+}

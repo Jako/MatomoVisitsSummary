@@ -1,0 +1,30 @@
+{
+  "name": "treehillstudio/matomovisitssummary",
+  "description": "A MODX Dashboard Widget with the visits summary graph of Matomo",
+  "authors": [
+    {
+      "name": "Christian Seel <hallo@chsmedien.de>",
+      "email": "hallo@chsmedien.de",
+      "homepage": "https://chsmedien.de"
+    },
+    {
+      "name": "Thomas Jakobi",
+      "email": "office@treehillstudio.com",
+      "homepage": "https://treehillstudio.com"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "TreehillStudio\\MatomoVisitsSummary\\": "src/"
+    }
+  }
+}

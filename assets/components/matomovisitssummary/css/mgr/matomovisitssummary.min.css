@@ -1,0 +1,6 @@
+.dashboard-block-treehillstudio{position:relative}#dashboard-block-treehillstudio-matomovisitssummary iframe{border:none;height:255px;width:100%}#dashboard-block-treehillstudio-matomovisitssummary .widget-iframe{height:260px;margin:-10px}#dashboard-block-treehillstudio-matomovisitssummary .matomo-directlink{color:#5e5e5e;display:block;padding:14px 0 12px;position:absolute;right:15px;text-decoration:none;top:1px}#dashboard-block-treehillstudio-matomovisitssummary .treehillstudio-widget-about{cursor:pointer;opacity:.25;position:absolute;right:50%;top:12px;transform:translateX(50%);transition:opacity .5s}#dashboard-block-treehillstudio-matomovisitssummary .treehillstudio-widget-about:hover{opacity:1}.treehillstudio_window a{color:#b2bf28;text-decoration:none}.treehillstudio_window a:hover{color:#77801a}#dashboard-block-treehillstudio-matomovisitssummary.modx3 .action-buttons{margin-right:105px}#dashboard-block-treehillstudio-matomovisitssummary.modx3 .body{overflow:visible}#dashboard-block-treehillstudio-matomovisitssummary.modx3 .matomo-directlink{top:-46px}
+/*!
+ * MatomoVisitsSummary - A MODX Dashboard Widget with the visits summary graph of Matomo
+ * Version: 1.1.0
+ * Build date: 2022-11-16
+ */
