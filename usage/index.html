@@ -170,6 +170,11 @@
     System Settings
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#widget-settings">
+    Widget Settings
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -202,6 +207,11 @@
     System Settings
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#widget-settings">
+    Widget Settings
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -217,55 +227,114 @@
 namespace <code>matomovisitssummary</code> and install the widget(s) in the dashboard to
 display the Matomo visits summary graph.</p>
 <h2 id="widget">Widget</h2>
-<p>LogRequest contains a dashboard widget to display the Matomo visits summary graph.</p>
+<p>MatomoVisitsSummary contains a dashboard widget to display the Matomo visits summary graph.</p>
 <h2 id="system-settings">System Settings</h2>
-<p>LogRequest uses the following system settings in the namespace <code>matomovisitssummary</code>:</p>
+<p>MatomoVisitsSummary uses the following system settings in the namespace
+<code>matomovisitssummary</code>:</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
+<th style="text-align: left;">Key</th>
+<th>Name</th>
 <th>Description</th>
 <th>Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;">matomovisitssummary.debug</td>
 <td>Debug</td>
 <td>Log debug information in the MODX error log.</td>
 <td>No</td>
 </tr>
 <tr>
+<td style="text-align: left;">matomovisitssummary.date</td>
 <td>Date for statistics</td>
 <td>Choose between "today" or "yesterday" as start for the "VisitsSummary" statistics.</td>
 <td>-</td>
 </tr>
 <tr>
+<td style="text-align: left;">matomovisitssummary.password</td>
 <td>Matomo Password</td>
 <td>Please enter the MD5 coded password of a Matomo user with view permission for the Matomo Site ID. Leave empty if no link to full statistics should be generated.</td>
 <td>-</td>
 </tr>
 <tr>
+<td style="text-align: left;">matomovisitssummary.siteid</td>
 <td>Matomo Site ID</td>
 <td>Please enter the Matomo Site ID.</td>
 <td>-</td>
 </tr>
 <tr>
+<td style="text-align: left;">matomovisitssummary.token_auth</td>
 <td>Matomo Token Auth</td>
 <td>Please enter the token auth of a Matomo user with view permission for the Matomo Site ID.</td>
 <td>-</td>
 </tr>
 <tr>
+<td style="text-align: left;">matomovisitssummary.url</td>
 <td>URL of the Matomo installation</td>
 <td>Please enter the URL of the Matomo installation without protocol. The URL must end with a slash!</td>
 <td>-</td>
 </tr>
 <tr>
+<td style="text-align: left;">matomovisitssummary.user</td>
 <td>Matomo Username</td>
 <td>Please enter the username of a Matomo user with view  permission for the Matomo Site ID. Leave empty if no link to full statistics should be generated.</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
+<h2 id="widget-settings">Widget Settings</h2>
+<p>In MODX 3, the widget can be modified with widget properties. These properties
+are based on the system settings. They take precedence over the system settings
+and must be added by editing the widget:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">date</td>
+<td>Choose between "today" or "yesterday" as start for the "VisitsSummary" statistics.</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align: left;">password</td>
+<td>Please enter the MD5 coded password of a Matomo user with view permission for the Matomo Site ID. Leave empty if no link to full statistics should be generated.</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align: left;">siteid</td>
+<td>Please enter the Matomo Site ID.</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align: left;">token_auth</td>
+<td>Please enter the token auth of a Matomo user with view permission for the Matomo Site ID.</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align: left;">url</td>
+<td>Please enter the URL of the Matomo installation without protocol. The URL must end with a slash!</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align: left;">user</td>
+<td>Please enter the username of a Matomo user with view  permission for the Matomo Site ID. Leave empty if no link to full statistics should be generated.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>If you want to display multiple MatomoVisitsSummary widgets in your dashboard,
+you have to duplicate the <code>matomovisitssummary.widget</code> widget with a new name
+(i.e. by duplicating the record in the database) and add i.e. a <code>siteid</code>
+property in the widget and fill it with for each widget with a different Matomo
+site id.</p>
 </article>
 </div>
 </div>
