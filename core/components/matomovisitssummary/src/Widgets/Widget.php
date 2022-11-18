@@ -27,7 +27,7 @@ abstract class Widget extends modDashboardWidgetInterface
     public $cssBlockClass = 'dashboard-block-treehillstudio';
 
     /**
-     * modDashboardWidgetLogrequest constructor.
+     * modDashboardWidgetMatomoVisitsSummary constructor.
      * @param xPDO $modx
      * @param modDashboardWidget $widget
      * @param modManagerController $controller
@@ -61,38 +61,5 @@ abstract class Widget extends modDashboardWidgetInterface
             $output = preg_replace('/\[\[([^\[\]]++|(?R))*?]]/s', '', $output);
         }
         return $output;
-    }
-
-    /**
-     * @param $type string
-     * @return string
-     */
-    public function renderCustom($type)
-    {
-        $assetsUrl = $this->matomovisitssummary->getOption('assetsUrl');
-        $jsUrl = $this->matomovisitssummary->getOption('jsUrl') . 'mgr/';
-        $jsSourceUrl = $assetsUrl . '../../../source/js/mgr/';
-        $cssUrl = $this->matomovisitssummary->getOption('cssUrl') . 'mgr/';
-        $cssSourceUrl = $assetsUrl . '../../../source/css/mgr/';
-
-        if ($this->matomovisitssummary->getOption('debug') && ($this->matomovisitssummary->getOption('assetsUrl') != MODX_ASSETS_URL . 'components/matomovisitssummary/')) {
-            $this->controller->addJavascript($jsSourceUrl . 'matomovisitssummary.js');
-            $this->controller->addJavascript($jsSourceUrl . 'helper/util.js');
-            $this->controller->addCss($cssSourceUrl . 'matomovisitssummary.css');
-        } else {
-            $this->controller->addJavascript($jsUrl . 'matomovisitssummary.min.js');
-            $this->controller->addCss($cssUrl . 'matomovisitssummary.min.css');
-        }
-        $this->modx->controller->addHtml('<script type="text/javascript">
-        Ext.onReady(function() {
-            MatomoVisitsSummary.config = ' . json_encode($this->matomovisitssummary->options, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . ';
-            MODx.load({
-                xtype: "matomovisitssummary-grid-matomovisitssummary-' . $type . '",
-                renderTo: "matomovisitssummary-grid-matomovisitssummary-' . $type . '",
-                connector_url: MatomoVisitsSummary.config.connectorUrl
-            });
-        });
-        </script>');
-        return $this->getFileChunk($this->matomovisitssummary->getOption('templatesPath') . 'matomovisitssummary_' . $type . '.tpl');
     }
 }

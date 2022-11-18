@@ -40,7 +40,7 @@ class MatomoVisitsSummary
      * The version
      * @var string $version
      */
-    public string $version = '1.1.0';
+    public string $version = '1.1.1';
 
     /**
      * The class options
@@ -90,7 +90,6 @@ class MatomoVisitsSummary
         $this->options = array_merge($this->options, [
             'debug' => $this->getBooleanOption('debug', $options, false),
             'modxversion' => $modxversion['version'],
-            'protocol' => $this->getOption('protocol', $options, 'https'),
             'url' => $this->getOption('url', $options, ''),
             'siteid' => $this->getOption('siteid', $options, ''),
             'key' => $this->getOption('key', $options, ''),

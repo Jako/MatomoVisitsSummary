@@ -1,4 +1,4 @@
-# LogRequest
+# MatomoVisitsSummary
 
 MatomoVisitsSummary is a MODX Dashboard Widget with the visits summary graph of
 Matomo. The package also includes a chunk with the Matomo tracking code.
