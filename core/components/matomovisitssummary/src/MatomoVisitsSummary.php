@@ -130,6 +130,7 @@ class MatomoVisitsSummary
 
     /**
      * Get Boolean Option
+     *
      * @param string $key
      * @param array $options
      * @param mixed $default
@@ -137,7 +138,7 @@ class MatomoVisitsSummary
      */
     public function getBooleanOption(string $key, array $options = [], $default = null): bool
     {
-        $option = $this->modx->getOption($key, $options, $default);
+        $option = $this->getOption($key, $options, $default);
         return ($option === 'true' || $option === true || $option === '1' || $option === 1);
     }
 }
