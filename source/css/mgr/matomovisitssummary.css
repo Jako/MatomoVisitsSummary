@@ -5,7 +5,7 @@
 #dashboard-block-treehillstudio-matomovisitssummary iframe {
   border: none;
   width: 100%;
-  height: 256px;
+  height: 255px;
 }
 #dashboard-block-treehillstudio-matomovisitssummary .widget-iframe {
   margin: -10px;
@@ -41,6 +41,9 @@
   color: #77801a;
 }
 
+#dashboard-block-treehillstudio-matomovisitssummary.modx3 iframe {
+  height: 256px;
+}
 #dashboard-block-treehillstudio-matomovisitssummary.modx3 .action-buttons {
   margin-right: 105px;
 }

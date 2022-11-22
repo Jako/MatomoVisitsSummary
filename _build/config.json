@@ -3,7 +3,7 @@
   "lowCaseName": "matomovisitssummary",
   "description": "A MODX Dashboard Widget with the visits summary graph of Matomo",
   "author": "Christian Seel, Thomas Jakobi",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "package": {
     "elements": {
       "widgets": [
