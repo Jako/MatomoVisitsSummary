@@ -40,7 +40,7 @@ class modDashboardWidgetMatomoVisitsSummary extends Widget
 
         $settings = array();
 
-        $widgetProperties = ($this->matomovisitssummary->getOption('modxversion') >= 3) ? $this->widget->get('properties') : [];
+        $widgetProperties = ($this->matomovisitssummary->getOption('modxversion') >= 3) ? $this->widget->get('properties') ?? [] : [];
 
         $settings['url'] = rtrim($this->matomovisitssummary->getOption('url', $widgetProperties, false), '/') . '/';
         $settings['siteid'] = $this->matomovisitssummary->getOption('siteid', $widgetProperties, false);
