@@ -86,6 +86,13 @@ class MatomoVisitsSummary
             'connectorUrl' => $assetsUrl . 'connector.php'
         ], $options);
 
+        $lexicon = $this->modx->getService('lexicon', 'modLexicon');
+        $lexicon->load($this->namespace . ':default');
+
+        $this->packageName = $this->modx->lexicon('matomovisitssummary');
+
+        $this->modx->addPackage($this->namespace, $this->getOption('modelPath'));
+
         // Add default options
         $this->options = array_merge($this->options, [
             'debug' => $this->getBooleanOption('debug', $options, false),
@@ -97,11 +104,6 @@ class MatomoVisitsSummary
             'password' => $this->getOption('password', $options, ''),
             'date' => $this->getOption('date', $options, ''),
         ]);
-
-        $this->modx->addPackage($this->namespace, $this->getOption('modelPath'));
-
-        $lexicon = $this->modx->getService('lexicon', 'modLexicon');
-        $lexicon->load($this->namespace . ':default');
     }
 
     /**
