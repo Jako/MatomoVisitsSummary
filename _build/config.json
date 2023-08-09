@@ -37,37 +37,31 @@
       },
       {
         "key": "url",
-        "type": "textfield",
         "area": "site",
         "value": ""
       },
       {
         "key": "siteid",
-        "type": "textfield",
         "area": "site",
         "value": ""
       },
       {
         "key": "token_auth",
-        "type": "textfield",
         "area": "site",
         "value": ""
       },
       {
         "key": "user",
-        "type": "textfield",
         "area": "site",
         "value": ""
       },
       {
         "key": "password",
-        "type": "textfield",
         "area": "site",
         "value": ""
       },
       {
         "key": "date",
-        "type": "textfield",
         "area": "site",
         "value": "today"
       }
