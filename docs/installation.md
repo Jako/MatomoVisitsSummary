@@ -9,7 +9,7 @@ If you can't access the MODX Extras Repository in your MODX installation, you
 can manually install MatomoVisitsSummary.
 
 * Download the transport package from [MODX
-  Extras](https://modx.com/extras/package/MatomoVisitsSummary) (or one of the
+  Extras](https://modx.com/extras/package/matomovisitssummary) (or one of the
   pre built transport packages in
   [_packages](https://github.com/Jako/MatomoVisitsSummary/tree/master/_packages))
 * Upload the zip file to your MODX installation's `core/packages` folder or
