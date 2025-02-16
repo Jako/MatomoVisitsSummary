@@ -3,7 +3,7 @@
  * MatomoVisitsSummary
  *
  * Copyright 2013-2022 by Christian Seel <hallo@chsmedien.de>
- * Copyright 2022 by Thomas Jakobi <office@treehillstudio.com>
+ * Copyright 2022-2025 by Thomas Jakobi <office@treehillstudio.com>
  *
  * @package matomovisitssummary
  * @subpackage classfile

@@ -84,7 +84,7 @@ const bumpCopyright = function () {
         'core/components/matomovisitssummary/model/matomovisitssummary/matomovisitssummary.class.php',
         'core/components/matomovisitssummary/src/MatomoVisitsSummary.php',
     ], {base: './'})
-        .pipe(replace(/Copyright 2016(-\d{4})? by/g, 'Copyright ' + (year > 2016 ? '2016-' : '') + year + ' by'))
+        .pipe(replace(/Copyright 2022(-\d{4})? by/g, 'Copyright ' + (year > 2022 ? '2022-' : '') + year + ' by'))
         .pipe(gulp.dest('.'));
 };
 const bumpVersion = function () {
@@ -98,14 +98,14 @@ const bumpWidget = function () {
     return gulp.src([
         'source/js/mgr/widgets/about.js'
     ], {base: './'})
-        .pipe(replace(/&copy; 2016(-\d{4})?/g, '&copy; ' + (year > 2016 ? '2016-' : '') + year))
+        .pipe(replace(/&copy; 2022(-\d{4})?/g, '&copy; ' + (year > 2022 ? '2022-' : '') + year))
         .pipe(gulp.dest('.'));
 };
 const bumpDocs = function () {
     return gulp.src([
         'mkdocs.yml',
     ], {base: './'})
-        .pipe(replace(/&copy; 2016(-\d{4})?/g, '&copy; ' + (year > 2016 ? '2016-' : '') + year))
+        .pipe(replace(/&copy; 2022(-\d{4})?/g, '&copy; ' + (year > 2022 ? '2022-' : '') + year))
         .pipe(gulp.dest('.'));
 };
 const bumpRequirements = function () {
