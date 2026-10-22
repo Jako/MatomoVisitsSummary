@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:meta";
 
 $treehillstudio-color: #cbd842;
 
@@ -49,4 +50,4 @@ $treehillstudio-color: #cbd842;
   }
 }
 
-@import "modx3";
+@include meta.load-css("modx3");
